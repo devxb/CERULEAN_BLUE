@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <link rel="stylesheet" href="./style.css">
+    </head>
+    <body class="frame">
+        <div class="background">
+        </div>
+        <div class="navigation-frame">
+            <div class="navigation">
+                <div class="logo-wrapper">
+                    <a href = [##_blog_link_##]>
+                        <div class="blog-name"> [##_title_##] </div>
+                    </a>
+                    <a href = [##_blog_link_##]>
+                        <img src="./images/logo2.svg"/>
+                    </a>
+                </div>
+                <div class="right-wrapper">
+                    <input class = "type-box" type="text" placeholder="Type-text and enter" onkeypress="if (event.keyCode == 13) { try{window.location.href='/search/' + document.getElementsByName('search')[0].value.replaceAll('%', '%50');document.getElementsByName('search')[0].value = ''; return false;}catch(e){} }" value="" name="search"/>
+                    <div class = "owner"> [##_blogger_##] </div>
+                    <div class = "menu" id ="menu">
+                        <label class="menu-wrap" for="check-menu">
+                            <input class="check-menu" type="checkbox" id="check-menu">
+                            <div class="menu-bar"></div>
+                            <div class="menu-bar"></div>
+                            <div class="menu-bar"></div>
+                            <div class="menu-bar"></div>
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class = "window">
+            <button class = "left-button" id = "left-button">
+                <img src = "./images/left-arrow.svg"/>
+            </button>
+            <div class = "window-wrapper">
+                <div class = "window-elements">
+
+                    <div class = "window-element">
+                        <a href="{Enter the link to move when clicked}">
+                        <img class="banner" src="./images/Banner.svg"/>
+                        </a>
+                    </div>
+
+                    <!-- TAG:: Banner-tag
+                        Sample of banner.
+                        Plase Copy and paste under tag to post your banner.
+
+                        ----- Copy and past under -----
+
+                        <div class = "window-element">
+                            <a href="{Enter the link to move when clicked}">
+                                <img class="banner" src="./images/Banner.svg"/>
+                            </a>
+                        </div>
+                    -->
+                </div>
+                <div class = "window-idx" id="window-idx">
+                </div>
+            </div>
+
+            <button class = "right-button" id = "right-button">
+                <img src = "./images/right-arrow.svg"/>
+            </button>
+        </div>
+
+        <div class = "content">
+            <div class = "content-wrap">
+                <div class = "content-elements">
+                    <s_article_rep>
+                        <!-- article list -->
+                        <div class="article-link-wrap">
+                        <s_index_article_rep>
+                            <a href = "[##_article_rep_link_##]" class = "article-link">
+                                <s_article_rep_thumbnail>
+                                    <div class = "article-image"> <img src = "[##_article_rep_thumbnail_url_##]"/> </div>
+                                </s_article_rep_thumbnail>
+                                <div class = "article-text">
+                                    <div class = "article-text-title"> [##_article_rep_title_##]</div>
+                                    <div class = "article-text-body"> [##_article_rep_summary_##]</div>
+                                    <div class = "article-text-foot"> [##_article_rep_category_##] / [##_article_rep_simple_date_##] / [##_article_rep_author_##]</div>
+                                </div>
+                            </a>
+                        </s_index_article_rep>
+                        </div>
+
+                        <!-- article -->
+                        <s_permalink_article_rep>
+                            <div class = "article-wrap">
+                                <div class = "article-title-wrap">
+                                    <div class = "article-title"> [##_article_rep_title_##] </div>
+                                    <div class = "article-title-tool">
+                                        <div class = "article-title-tool-element">
+                                            Author  @[##_article_rep_author_##]
+                                        </div>
+
+                                        <a href = "[##_article_rep_category_link_##]">
+                                            [##_article_rep_category_##]
+                                        </a>
+
+                                        <div class = "article-title-tool-element">
+                                            [##_article_rep_date_##]
+                                        </div>
+                                        <s_rp_count>
+                                            <div class = "article-title-tool-comment">
+                                                <img src="./images/title-comment.svg" style="padding-top:4px; object-fit:scale-down; width: 16px; height: auto;"/>
+                                                <div class="article-title-tool-element">
+                                                    [##_article_rep_rp_cnt_##]
+                                                </div>
+                                            </div>
+                                        </s_rp_count>
+                                        <s_ad_div> 
+                                            <div class="article-title-tool-element">
+                                            <a href="[##_s_ad_m_link_##]">Modify</a> / <a href="#" onclick="[##_s_ad_d_onclick_##]">Delete</a> 
+                                            </div>
+                                        </s_ad_div>
+                                    </div>
+                                </div>
+
+                                <span class = "article-body" style="width: 100%;
+                                                                    max-width: 880px;
+                                                                    height: auto;
+                                                                    word-wrap : break-word;
+                                                                    word-break: break-all;
+                                                                    font-family: 'Noto Sans KR', sans-serif;
+                                                                    font-weight: 300;">
+                                    [##_article_rep_desc_##] 
+                                </span>
+                                
+                                <!-- related posts : error
+                                <div class = "article-bottom-wrap">
+                                    <div class = "other-posts-wrap">
+                                        <div class = "other-posts-title">Other posts</div>
+                                        <div class = "other-posts-hr"></div>
+                                        <div class = "related-other-posts">
+                                            <s_article_related>
+                                                <a href="[##_article_related_rep_link_##]">
+                                                    [##_article_related_rep_title_##]
+                                                </a>
+                                            </s_article_related>
+                                        </div>
+                                    </div>
+                                </div>
+                                -->
+
+                                
+                                <div class = "article-comment-wrap">
+                                    <s_rp>
+                                        <s_rp_input_form>
+                                            <div class = "article-comment-typebox-wrap">
+                                                <div class="article-comment-typebox-inner-wrap">
+                                                    <textarea placeholder="Type comment" name="[##_rp_input_comment_##]" rows="10" cols="50" class = "article-comment-typebox"></textarea>
+                                                    <input type="image" src= "./images/comment-arrow.svg" onclick="[##_rp_onclick_submit_##]" class = "article-comment-input-box"/>
+                                                </div>
+                                                <div class="article-comment-secret-wrap">
+                                                    <label for="secret">
+                                                        <div style="margin-bottom:5px; margin-right: 5px;">secret</div>
+                                                    </label>
+                                                    <input type="checkbox" id="secret-checkbox" name="[##_rp_input_is_secret_##]"/>
+                                                    <label for="secret-checkbox" class="secret-checkbox"></label>
+                                                </div>
+                                            </div>
+                                        </s_rp_input_form>
+                                        <s_rp_container>
+                                            <s_rp_rep>
+                                                <div id = "[##_rp_rep_id_##]">
+                                                    <div class = "[##_rp_rep_class_##]">
+                                                        <div class = "article-comment-reply-wrap">
+
+                                                            <div class = "article-comment-reply-replier-wrap">
+                                                                <img class = "article-comment-reply-replier-profile" src="[##_rp_rep_logo_##]">
+                                                                <div class = "article-comment-reply-info">
+                                                                    <div class = "article-comment-reply-replier-info">
+                                                                        <div class = "article-comment-reply-replier-name"> [##_rp_rep_name_##]</div>
+                                                                        <div class = "article-comment-reply-tool">
+                                                                            <a href="#" onclick="[##_rp_rep_onclick_delete_##]" class="modify">
+                                                                                <span>Modify / Delete</span>
+                                                                            </a>
+
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class = "article-comment-reply-tool-sub">
+                                                                        <div class = "article-comment-reply-date">
+                                                                            [##_rp_rep_date_##]
+                                                                        </div>
+                                                                        <a href="#" onclick="[##_rp_rep_onclick_reply_##]" class="write">
+                                                                            <span>reply</span>
+                                                                        </a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class = "article-comment-reply-text">
+                                                                [##_rp_rep_desc_##]
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <s_rp2_container>
+                                                        <s_rp2_rep>
+                                                            <div id = "[##_rp_rep_id_##]">
+                                                                <div class="[##_rp_rep_class_##]">
+                                                                    <div class = "article-comment-reply-reply-wrap">
+
+                                                                        <div class = "article-comment-reply-reply-replier-wrap">
+                                                                            <img class = "article-comment-reply-reply-replier-profile" src="[##_rp_rep_logo_##]">
+                                                                            <div class = "article-comment-reply-reply-info">
+                                                                                <div class = "article-comment-reply-reply-replier-info">
+                                                                                    <div class = "article-comment-reply-reply-replier-name"> [##_rp_rep_name_##]</div>
+                                                                                    <div class = "article-comment-reply-reply-tool">
+                                                                                        <a href="#" onclick="[##_rp_rep_onclick_delete_##]" class="modify">
+                                                                                            <span>Modify / Delete</span>
+                                                                                        </a>
+                                                                                    </div>
+                                                                                </div>
+            
+                                                                                <div class = "article-comment-reply-reply-date">
+                                                                                    [##_rp_rep_date_##]
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+            
+                                                                        <div class = "article-comment-reply-reply-text">
+                                                                            [##_rp_rep_desc_##]
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                        </s_rp2_rep>
+                                                    </s_rp2_container>
+                                                </div>
+                                            </s_rp_rep>
+                                        </s_rp_container>
+                                    </s_rp>
+                                </div>
+
+                            </div>
+                        </s_permalink_article_rep>
+                    </s_article_rep>
+
+                    <s_paging>
+                        <div class="paging">
+                            <a [##_prev_page_##] class="[##_no_more_prev_##]"> <img src = "./images/left-arrow.svg"/> </a>
+                            <div class="paging-idx-wrap">
+                                <s_paging_rep>
+                                    <a [##_paging_rep_link_##] class="paging-idx">&nbsp; [##_paging_rep_link_num_##] &nbsp;</a>
+                                </s_paging_rep>
+                            </div>
+                            <a [##_next_page_##] class="[##_no_more_next_##]"> <img src = "./images/right-arrow.svg"/> </a>
+                        </div>
+                    </s_paging>
+                </div>
+
+                <div class = "side-bar-outer-wrap">
+                    <div class = "side-bar-wrap">
+                        <div class = "profile-wrap">
+                            <img class = "profile" src = "[##_image_##]"/>
+                            <div class = "name-wrap">
+                                <div class = "name"> Devxb </div>
+                                <div class = "introduce"> Java Back-backend Developer 
+                                <br><br> <a href="https://github.com/devxb">Click to Github :)</a> 
+                                </div>
+                            </div>
+                        </div>
+                            <s_sidebar>
+                                <!-- right side bar -->
+                                <div class = "s_sidebar">
+                                <s_sidebar_element>
+                                    <!-- top articles -->
+                                    <div class="popular-articles"> 
+                                        <div class="side-bar-element-title"> Top articles </div>
+                                        <ol>
+                                            <s_rctps_popular_rep>
+                                            <li>
+                                            <span class="popular-article">
+                                                <a href="[##_rctps_rep_link_##]"> <span>[##_rctps_rep_title_##]</span></a>
+                                            </span>
+                                            </li>
+                                            </s_rctps_popular_rep>
+                                        </ol>
+                                    </div>
+                                </s_sidebar_element>
+                                
+                                <s_sidebar_element>
+                                    <!-- Keywords -->
+                                    <div class="keyword-wrap">
+                                        <div class="side-bar-element-title"> Top keywords </div>
+                                        <div class="keywords">
+                                            <s_random_tags>
+                                                <a href="[##_tag_link_##]"> 
+                                                    <div class="keyword-element">
+                                                        [##_tag_name_##] 
+                                                    </div> 
+                                                </a>
+                                            </s_random_tags>
+                                        </div>
+                                    </div>
+                                </s_sidebar_element>
+
+                                <s_sidebar_element>
+                                    <!-- visitors  -->
+                                    <div class = "visitors">
+                                        <div class="side-bar-element-title"> Visitors</div>
+                                        <div class="visitor">
+                                            <span class = "today"> <span style="font-family:'Noto Sans KR', sans-serif; font-weight: 500; color: black;">Today</span> : [##_count_today_##] </span>
+                                            <br>
+                                            <span class = "total">  <span style="font-family:'Noto Sans KR', sans-serif; font-weight: 500; color: black;">Total</span> : [##_count_total_##] </span>
+                                        </div>
+                                    </div>
+                                </s_sidebar_element>
+                                </div>
+                            </s_sidebar>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class = "footer">
+        </div>
+
+        <div class = "pop-up-menu-wrap" id = ".side-bar" style="display : none;">
+            <div class = "pop-up-menu">
+                <div class = "category-wrap">
+                    <div class = "category-title">Category</div>
+                    <s_sidebar_element>
+                        <!-- 카테고리 -->
+                        <div class="category">
+                          [##_category_list_##]
+                        </div>
+                    </s_sidebar_element>
+                </div>
+                <div class = "manage-wrap">
+                    <div class = "manage-title">
+                        Manage
+                    </div>
+                    
+                    
+                    <div class = "manage-user-info">
+                        <div class = "manage-user-name">
+                            [##_blogger_##]
+                        </div>
+                        <div class = "manage-blog-name">
+                            [##_title_##]
+                        </div>
+                    </div>
+
+                    <div class = "manage-tool">
+                        <a href = "https://www.tistory.com/member/blog"> Manage account </a>
+                        
+                        <span class = "vertical-border"></span>
+
+                        <a href = "[##_blog_link_##]manage"> Manage Blog </a>
+                    </div>
+                </div>
+
+                <div class = "skin-info-wrap">
+                    <div class = "skin-info-title"> Skin info </div>
+                    <a href = "[skin download url]" style="padding-left : 0px;">
+                    <div class = "skin-info">
+                        <div class = "skin-name"> CERULEAN BLUE </div>
+                        <div class = "designed-by"> Designed by Devxb </div>
+                    </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- TAG:: Tistory script -->
+        <s_t3>
+        </s_t3>
+        <!-- TAG-END:: Tistory script -->
+    </body>
+    <script src="./images/script.js"></script>
+</html>

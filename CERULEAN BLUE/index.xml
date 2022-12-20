@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<skin>
+
+  <information>
+    <name>기본 스킨</name>
+    <version>1.1</version>
+    <description>
+      <![CDATA[자신의 프로젝트등을 홍보할 수 있는 배너를 포함한 티스토리 스킨입니다.]]>
+    </description>
+    <license>
+      <![CDATA[허가없는 수정을 제외한 모든 목적으로 사용 가능합니다.]]>
+    </license>
+  </information>
+
+  <author>
+    <name>Devxb</name>
+    <homepage>https://github.com/devxb</homepage>
+    <email>develxb@gmail.com</email>
+  </author>
+
+  <default>
+    <recentEntries>5</recentEntries>
+    <recentComments>5</recentComments>
+    <recentTrackbacks>5</recentTrackbacks>
+    <itemsOnGuestbook>10</itemsOnGuestbook>
+    <tagsInCloud>10</tagsInCloud>
+    <sortInCloud>1</sortInCloud>
+    <expandComment>0</expandComment>
+    <expandTrackback>0</expandTrackback>
+    <lengthOfRecentNotice>25</lengthOfRecentNotice>
+    <lengthOfRecentEntry>27</lengthOfRecentEntry>
+    <lengthOfRecentComment>30</lengthOfRecentComment>
+    <lengthOfRecentTrackback>30</lengthOfRecentTrackback>
+    <lengthOfLink>30</lengthOfLink>
+    <showListOnCategory>1</showListOnCategory>
+    <showListOnArchive>1</showListOnArchive>
+    <commentMessage>
+      <none>댓글이 없습니다.</none>
+      <single>댓글 &lt;span class="cnt"&gt;하나&lt;/span&gt; 달렸습니다.</single>
+    </commentMessage>
+    <trackbackMessage>
+      <none>받은 트랙백이 없고</none>
+      <single>트랙백이 &lt;span class="cnt"&gt;하나&lt;/span&gt;이고</single>
+    </trackbackMessage>
+    <tree>
+      <color>000000</color>
+      <bgColor>ffffff</bgColor>
+      <activeColor>000000</activeColor>
+      <activeBgColor>eeeeee</activeBgColor>
+      <labelLength>27</labelLength>
+      <showValue>1</showValue>
+    </tree>
+    <contentWidth>500</contentWidth>
+  </default>
+</skin>
